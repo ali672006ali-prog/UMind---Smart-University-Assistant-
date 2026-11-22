@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniMind - Smart University Assistant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'brand-blue': '#1E88E5',
+                'brand-red': '#E53935',
+                'brand-gray': '#BDBDBD',
+              },
+              fontFamily: {
+                cairo: ['Cairo', 'sans-serif'],
+              },
+            }
+          }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            overflow-x: hidden;
+        }
+        input, select, textarea {
+            background-color: #FFFFFF !important;
+            color: #000000 !important;
+            border: 2px solid #BDBDBD !important;
+            transition: all 0.2s ease;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #1E88E5 !important;
+            box-shadow: 0 0 0 4px rgba(30, 136, 229, 0.1);
+        }
+        .login-gradient {
+            background: linear-gradient(135deg, #FFFFFF 0%, #F5F7FA 100%);
+        }
+        .nav-link-active {
+            color: #1E88E5 !important;
+            border-bottom: 3px solid #1E88E5;
+        }
+        [dir="rtl"] .ml-auto { margin-left: 0; margin-right: auto; }
+        [dir="rtl"] .mr-auto { margin-right: 0; margin-left: auto; }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.41.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>

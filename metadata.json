@@ -1,0 +1,8 @@
+{
+  "name": "UniMind - Smart University Assistant",
+  "description": "A comprehensive productivity suite for university students featuring an AI study partner, intelligent planner, Pomodoro timer, and GPA tracker.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
